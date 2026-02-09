@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Web Design & Development</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        h2 {
+            color: #2575fc;
+            margin: 25px 0 15px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #777;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .skill {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .skill h3 {
+            color: #6a11cb;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .highlight {
+            color: #2575fc;
+            font-weight: 600;
+        }
+        
+        .note {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-left: 4px solid #2575fc;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Design & Development</h1>
+        <p class="subtitle">An introduction to creating beautiful, functional websites for the modern world</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2>What is Web Design?</h2>
+            <p class="intro-text">Web design focuses on the visual aesthetics and usability of a website. It involves creating an attractive layout, selecting appropriate color schemes, typography, and images that align with the website's purpose and target audience.</p>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web design process on a computer screen">
+                <p class="caption">Modern web design focuses on user experience and visual appeal</p>
+            </div>
+            
+            <p>Good web design isn't just about looking pretty—it's about creating an intuitive user experience. Designers must consider how users will interact with the website and ensure information is organized logically. This includes creating clear navigation, consistent layouts, and visual hierarchies that guide users to the most important content.</p>
+            
+            <div class="note">
+                <p><span class="highlight">Note:</span> Responsive design is now essential, as over 50% of web traffic comes from mobile devices.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>What is Web Development?</h2>
+            <p class="intro-text">Web development involves building and maintaining websites through coding and programming. Developers take the web designer's mockups and bring them to life using technologies like HTML, CSS, and JavaScript.</p>
+            
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Code editor with web development code">
+                <p class="caption">Web developers write code that brings designs to life</p>
+            </div>
+            
+            <p>Web development is typically divided into front-end (client-side) and back-end (server-side) development. Front-end developers focus on what users see and interact with directly in their browsers, while back-end developers work on the server, database, and application logic that power the website behind the scenes.</p>
+            
+            <p>Modern web development also involves using frameworks and libraries like React, Angular, Vue.js, Node.js, and Django to build more complex, interactive, and efficient websites and web applications.</p>
+        </div>
+    </div>
+    
+    <h2>Key Skills in Web Design & Development</h2>
+    
+    <div class="skills-list">
+        <div class="skill">
+            <h3>HTML & CSS</h3>
+            <p>The foundational building blocks of the web. HTML provides the structure, while CSS handles the visual styling and layout.</p>
+        </div>
+        
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Adds interactivity and dynamic behavior to websites. It's now used for both front-end and back-end development.</p>
+        </div>
+        
+        <div class="skill">
+            <h3>UI/UX Design</h3>
+            <p>Focuses on creating intuitive interfaces (UI) and optimizing the overall user experience (UX) of a website.</p>
+        </div>
+        
+        <div class="skill">
+            <h3>Responsive Design</h3>
+            <p>Ensures websites work well on all devices, from desktop computers to tablets and smartphones.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>The Web Development Process</h2>
+        
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Web analytics dashboard showing website performance">
+            <p class="caption">Successful websites require planning, design, development, and maintenance</p>
+        </div>
+        
+        <p>Creating a website typically follows a structured process:</p>
+        
+        <p><span class="highlight">1. Planning:</span> Defining the website's purpose, target audience, and content structure.</p>
+        <p><span class="highlight">2. Design:</span> Creating wireframes and mockups of the website's layout and visual style.</p>
+        <p><span class="highlight">3. Development:</span> Writing code to build the functional website based on the designs.</p>
+        <p><span class="highlight">4. Testing:</span> Checking for bugs, compatibility issues, and usability problems.</p>
+        <p><span class="highlight">5. Launch:</span> Making the website live on the internet for public access.</p>
+        <p><span class="highlight">6. Maintenance:</span> Updating content, fixing issues, and improving features over time.</p>
+        
+        <p>This process is often iterative, with continuous improvements based on user feedback and analytics data.</p>
+    </div>
+    
+</body>
+</html>
